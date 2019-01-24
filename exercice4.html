@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" dir="ltr">
     <head>
-        <title>Exercice_4</title>
         <meta charset="UTF-8" />
+        <title>Exo 4</title>
     </head>
     <body>
         <form>
             <label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname"/>
             <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"/>
             <label for="city">Ville : </label><input type="text" name="city" id="city"/>
-            <button  name="submit" id="submit" onclick="toggle()">Valider</button>
+            <button name="submit" id="submit" onclick="displayInformations()">Valider</button>
         </form>
-        <script>
-        function toggle() {
-          var nom = document.getElementById("lastname").value;
-          var prenom = document.getElementById("firstname").value;
-          var ville = document.getElementById("city").value;
-          alert(nom+"\n"+prenom+"\n"+ville);
-}
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
